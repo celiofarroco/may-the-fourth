@@ -1,7 +1,7 @@
 <strong><h1 align="center">Disney Plus - Star Wars</h1></strong>
 
 <p align="center">
-  <img alt="" src=".github/preview.png" width="100%">
+  <img alt="" src=".github/preview2.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
