@@ -7,13 +7,16 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #000;
-
   color: white;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 ul {
@@ -46,14 +49,16 @@ header nav ul {
 
 header nav ul a {
   display: flex;
-  gap: 2px;
+  align-items: center;
+  gap: 3px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .avatar {
   display: flex;
   align-items: center;
+
   gap: 16px;
 }
 span {
@@ -121,4 +126,48 @@ main {
 .container .logo img {
   width: 100%;
   margin: auto;
+}
+
+/* =================================================================*/
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 20%;
+  margin-right: 15px;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.carousel-prev {
+  left: 20px;
+}
+
+.carousel-next {
+  right: 20px;
 }
