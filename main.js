@@ -40,8 +40,12 @@ function createCarousel(carouselEl) {
 }
 
 // Use a função para criar cada carrossel individual
-const carousel1 = document.querySelector("#carousel3");
+const carousel1 = document.querySelector("#carousel1");
+createCarousel(carousel1);
+const carousel2 = document.querySelector("#carousel2");
+createCarousel(carousel2);
+const carousel3 = document.querySelector("#carousel3");
 createCarousel(carousel3);
 
-const carousel2 = document.querySelector("#carousel4");
+const carousel4 = document.querySelector("#carousel4");
 createCarousel(carousel4);

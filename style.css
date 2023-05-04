@@ -77,7 +77,7 @@ video {
 
 main {
   margin-top: 595px;
-  padding: 0 40px;
+  padding: 0 40px 0 20px;
 }
 .title {
   padding: 0 20px;
@@ -90,6 +90,7 @@ main {
   grid-template-columns: repeat(5, 1fr);
   gap: 36px;
   margin: 20px 0 40px;
+  padding: 0 20px;
 }
 
 .card {
@@ -143,11 +144,6 @@ main {
 
 .carousel-item {
   flex: 0 0 20%;
-  margin-right: 15px;
-}
-
-.carousel-item img {
-  width: 100%;
 }
 
 .carousel-prev,
@@ -164,10 +160,50 @@ main {
   font-size: 20px;
 }
 
+.carousel-prev::before,
+.carousel-next::before {
+  content: "";
+  display: inline-block;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
 .carousel-prev {
   left: 20px;
 }
 
+.carousel-prev::before {
+  margin-left: -2px;
+}
+
 .carousel-next {
   right: 20px;
+}
+
+.carousel-prev::before {
+  margin-left: 2px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+}
+
+.carousel-next::before {
+  margin-left: -2px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+.carousel-prev:hover,
+.carousel-next:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-prev:focus,
+.carousel-next:focus {
+  outline: none;
 }
