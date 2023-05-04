@@ -17,7 +17,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🌍 Acesse o site:
 
-- [Clique aqui para visualizar](https://rocketseat-education.github.io/disney-plus-star-wars/)
+- [Clique aqui para visualizar](https://celiofarroco.github.io/may-the-fourth/)
 
 ---
 
