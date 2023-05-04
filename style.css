@@ -64,7 +64,7 @@ video {
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 100vh;
+
   object-fit: cover;
   z-index: -1;
   opacity: 50%;
@@ -74,16 +74,17 @@ main {
   margin-top: 595px;
   padding: 0 40px;
 }
-h3 {
+.title {
+  padding: 0 20px;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 45px;
-  margin: 20px;
-  padding-bottom: 40px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 36px;
+  margin: 20px 0 40px;
 }
 
 .card {
@@ -94,7 +95,7 @@ h3 {
 }
 
 .card:hover {
-  outline: 1px solid white;
+  outline: 2px solid white;
   scale: 1.05;
 }
 
@@ -104,9 +105,6 @@ h3 {
   display: block;
 }
 
-/* ===== Scrollbar CSS ===== */
-
-/* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 8px;
 }
@@ -117,6 +115,10 @@ h3 {
     rgba(0, 0, 255, 1) 0%,
     rgba(255, 0, 0, 1) 100%
   );
-
   border-radius: 8px;
+}
+
+.container .logo img {
+  width: 100%;
+  margin: auto;
 }
